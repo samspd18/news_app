@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.fragments.news_paper.NewsPaperFragment">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        android:text="Please select the language "
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="English"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/btnHindi"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Hindi"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnglish" />
+
+    <Button
+        android:id="@+id/btnMarathi"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Marathi"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHindi" />
+
+    <Button
+        android:id="@+id/btnPunjabi"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Punjabi"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMarathi" />
+
+    <Button
+        android:id="@+id/btnTelugu"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Telugu"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPunjabi" />
+
+    <Button
+        android:id="@+id/btnGujarati"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Gujarati"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelugu" />
+
+    <Button
+        android:id="@+id/btnOdia"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Odia"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGujarati" />
+
+    <Button
+        android:id="@+id/btnAssamese"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Assamese"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOdia" />
+
+    <Button
+        android:id="@+id/btnMalayalam"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Malayalam"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAssamese" />
+
+    <Button
+        android:id="@+id/btnTamil"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Tamil"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMalayalam" />
+
+    <Button
+        android:id="@+id/btnUrdu"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Urdu"
+        android:fontFamily="serif-monospace"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTamil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

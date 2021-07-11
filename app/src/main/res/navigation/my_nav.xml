@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/topHeadLinesFragment">
+
+    <fragment
+        android:id="@+id/topHeadLinesFragment"
+        android:name="com.example.newsapp.ui.fragments.top_headlines.TopHeadLinesFragment"
+        android:label="Top HeadLines"
+        tools:layout="@layout/fragment_top_head_lines" >
+        <action
+            android:id="@+id/action_topHeadLinesFragment_to_topHeadLineBottomSheetFragment"
+            app:destination="@id/topHeadLineBottomSheetFragment" />
+        <argument
+            android:name="backFromTopHeadLineBottomSheet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_topHeadLinesFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/globalNewsFragment"
+        android:name="com.example.newsapp.ui.fragments.global_news.GlobalNewsFragment"
+        android:label="Global News"
+        tools:layout="@layout/fragment_global_news" >
+        <action
+            android:id="@+id/action_globalNewsFragment_to_deatilsActivity2"
+            app:destination="@id/deatilsActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/coronVirusNewsFragment"
+        android:name="com.example.newsapp.ui.fragments.coronavirus_news.CoronaVirusNewsFragment"
+        android:label="Covid-19 Special"
+        tools:layout="@layout/fragment_corona_virus_news" />
+    <fragment
+        android:id="@+id/newsPaperFragment"
+        android:name="com.example.newsapp.ui.fragments.news_paper.NewsPaperFragment"
+        android:label="News Papers"
+        tools:layout="@layout/fragment_news_paper" >
+        <action
+            android:id="@+id/action_newsPaperFragment_to_newsPaperDetailsFragment2"
+            app:destination="@id/newsPaperDetailsFragment2" />
+    </fragment>
+    <dialog
+        android:id="@+id/topHeadLineBottomSheetFragment"
+        android:name="com.example.newsapp.ui.fragments.top_headlines.topheadlinesbottomsheet.TopHeadLineBottomSheetFragment"
+        android:label="fragment_top_head_line_bottom_sheet"
+        tools:layout="@layout/fragment_top_head_line_bottom_sheet" >
+        <action
+            android:id="@+id/action_topHeadLineBottomSheetFragment_to_topHeadLinesFragment"
+            app:destination="@id/topHeadLinesFragment" />
+    </dialog>
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.newsapp.ui.activities.DetailsActivity"
+        android:label="Details"
+        tools:layout="@layout/activity_details" >
+        <argument
+            android:name="article"
+            app:argType="com.example.newsapp.models.topheadlines.Article" />
+    </activity>
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="com.example.newsapp.ui.fragments.overview.OverviewFragment"
+        android:label="fragment_overview"
+        tools:layout="@layout/fragment_overview" />
+    <fragment
+        android:id="@+id/fullStoryFragment"
+        android:name="com.example.newsapp.ui.fragments.fullstory.FullStoryFragment"
+        android:label="fragment_full_story"
+        tools:layout="@layout/fragment_full_story" />
+    <activity
+        android:id="@+id/deatilsActivity2"
+        android:name="com.example.newsapp.ui.activities.DeatilsActivity2"
+        android:label="Deatils"
+        tools:layout="@layout/activity_deatils2" >
+        <argument
+            android:name="article"
+            app:argType="com.example.newsapp.models.globalnews.Article" />
+    </activity>
+    <fragment
+        android:id="@+id/fullStoryFragment2"
+        android:name="com.example.newsapp.ui.fragments.fullstory.FullStoryFragment2"
+        android:label="fragment_full_story2"
+        tools:layout="@layout/fragment_full_story2" />
+    <fragment
+        android:id="@+id/newsPaperDetailsFragment2"
+        android:name="com.example.newsapp.ui.fragments.NewsPaperDetailsFragment"
+        android:label="News Paper"
+        tools:layout="@layout/fragment_news_paper_deatils" >
+        <action
+            android:id="@+id/action_newsPaperDetailsFragment2_to_newsPaperFragment"
+            app:destination="@id/newsPaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/overviewFragment2"
+        android:name="com.example.newsapp.ui.fragments.overview.OverviewFragment2"
+        android:label="fragment_overview2"
+        tools:layout="@layout/fragment_overview2" />
+</navigation>
